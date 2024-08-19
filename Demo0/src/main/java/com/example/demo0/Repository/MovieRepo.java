@@ -9,6 +9,6 @@ import java.util.Optional;
 
 @Repository
 public interface MovieRepo extends JpaRepository<MovieModel,Long> {
-
+List<MovieModel> findByTitle(String title) ;
 
 }
