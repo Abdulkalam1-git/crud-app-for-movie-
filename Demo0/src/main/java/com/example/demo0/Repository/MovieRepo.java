@@ -11,5 +11,5 @@ import java.util.Optional;
 public interface MovieRepo extends JpaRepository<MovieModel,Long> {
   //for getting a details by title
 List<MovieModel> findByTitle(String title) ;
-
+List<MovieModel> findByYear(String year) ;
 }
