@@ -11,11 +11,14 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table
 public class MovieModel {
-    @Id
+     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
+    @Column(nullable = false , unique = true )
+    private String uniqueId;
     private String title;
-    private String Year;
+    private String mobilenumber;
+    private String year;
 
 
 }
